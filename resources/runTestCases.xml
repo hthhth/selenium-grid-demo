@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium GRID">
+
+    <test name="Run on FIREFOX">
+        <parameter name="browser" value="firefox" />
+        <parameter name="ipAddress" value="192.168.20.2"></parameter>
+        <parameter name="port" value="5555"></parameter>
+        <classes>
+            <class name="grid.Level_00_Register_Login_Step_By_Step" />
+        </classes>
+    </test>
+    <test name="Run on CHROME">
+        <parameter name="browser" value="chrome" />
+        <parameter name="ipAddress" value="192.168.20.2"></parameter>
+        <parameter name="port" value="5555"></parameter>
+        <classes>
+            <class name="grid.Level_00_Register_Login_Step_By_Step" />
+        </classes>
+    </test>
+
+</suite>
